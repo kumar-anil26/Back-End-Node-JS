@@ -1,0 +1,35 @@
+<div class="hidden sm:block">
+  <div class="flex space-x-4 bg-orange-500 p-3">
+    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+    <a
+      href="/"
+      class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 <%= currentPage==='home list' ? 'bg-orange-700' :' hover:bg-orange-700 hover:text-white'%>"
+      >Home List</a
+    >
+    <a
+      href="/user/add-home"
+      class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 <%= currentPage==='add home' ? 'bg-orange-700' :' hover:bg-orange-700 hover:text-white'%>"
+      >Add Home</a
+    >
+    <a
+      href="#"
+      class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 <%= currentPage==='home details' ? 'bg-orange-700' :' hover:bg-orange-700 hover:text-white'%>"
+      >Home details</a
+    >
+    <a
+      href="/user/booking-home"
+      class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 <%= currentPage==='booking home' ? 'bg-orange-700' :' hover:bg-orange-700 hover:text-white'%>"
+      >Booking Home</a
+    >
+    <a
+      href="#"
+      class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 <%= currentPage==='favorite home' ? 'bg-orange-700' :' hover:bg-orange-700 hover:text-white'%>"
+      >Favorite Home</a
+    >
+    <a
+      href="#"
+      class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 <%= currentPage==='reserve home' ? 'bg-orange-700' :' hover:bg-orange-700 hover:text-white'%>"
+      >Reserve Home</a
+    >
+  </div>
+</div>

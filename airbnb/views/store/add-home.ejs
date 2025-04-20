@@ -1,0 +1,50 @@
+<%- include('../partial/header') %>
+<body>
+    <%- include('../partial/navBar') %>
+  <div class="m-auto min-h-fit w-fit">
+    <h2 class="text-3xl font-bold mt-3 text-center text-rose-500">
+      Enter your Details
+    </h2>
+    <form
+      action="/user/added-home-list"
+      method="post"
+      class="bg-white p-8 rounded-lg shadow-md w-96 pb-4"
+    >
+      <input
+        type="text"
+        name="hname"
+        placeholder="Enter your name"
+        class="w-full mb-4 px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+      />
+      <input
+        type="number"
+        name="pnight"
+        placeholder="Prince per Night"
+        class="w-full mb-4 px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+      />
+      <input
+        type="text"
+        name="location"
+        placeholder="Enter Loaction"
+        class="w-full mb-4 px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+      />
+      <input
+        type="text"
+        name="rating"
+        placeholder="Enter Rating"
+        class="w-full mb-4 px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+      />
+      <input
+        type="text"
+        name="photoURL"
+        placeholder="Enter photo URL"
+        class="w-full mb-4 px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+      />
+      <input
+        type="submit"
+        class="w-full bg-orange-400 text-white py-2 rounded-lg hover:bg-orange-600 cursor-pointer"
+      />
+    </form>
+  </div>
+</body>
+</html>
